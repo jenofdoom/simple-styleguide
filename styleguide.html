@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Simple styleguide</title>
+        <meta name="description" content="Simple styleguide - uses your own site's CSS files to create a styleguide that updates itsef whenever your styles change">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styleguide.css" media="screen, print">
+        <!-- INCLUDE LINK(S) TO YOUR NORMAL STYLESHEET OR THRID PARTY STYLESHEETS HERE -->
+    </head>
+    <body class="styleguide">
+
+    <h1 id="top">Styleguide</h1>
+
+    <h2>Elements</h2>
+
+    <ul id="category-tabs">
+    </ul> <!-- categories are dynamically generated via the data-category tags -->
+
+    <!-- example of styleguide entry formatting
+
+      <section data-markdown data-category="category-name-goes-here">
+      ### Title of element
+      Description of element, this can include any markdown formatting, multiple paragraphs etc (optional).
+      ```
+      <code for the element goes in between the triple backticks - there should only be one triple backtick part per section>
+      ```
+      </section>
+
+    end of example -->
+
+
+
+    <!-- BEGINNING OF STYLE GUIDE ELEMENTS - insert your element description sections here -->
+    <!--
+      Note that to prevent this section becoming long, you can include other
+      partial files using your backend templating, if you'd rather.
+
+      Elements will be split up into categories as specified, but will otherwise
+      just appear in HTML order.
+
+      Two examples elements are provided below, you can customise or remove
+      these as you see fit.
+    -->
+
+    <section data-markdown data-category="buttons">
+      ### Primary action button
+      This is for primary actions on a page.
+      ```
+      <button type="button" class="btn btn-primary">Primary</button>
+      ```
+    </section>
+
+    <section data-markdown data-category="alerts">
+      ### Error alerts
+      ```
+      <div class="alert alert-danger" role="alert">Your error message</div>
+      ```
+    </section>
+
+
+
+
+    <!-- END OF ELEMENTS -->
+
+
+
+    <div id="scroll-to-top">
+      <a href="#top" class="button">⇧ Back to top</a>
+    </div>
+
+    <!-- third party js resources - if you prefer you can host these locally instead -->
+    <script
+        src="https://code.jquery.com/jquery-1.12.3.min.js"
+        integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/chjj/marked/v0.3.5/marked.min.js"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.1/dist/clipboard.min.js"></script>
+
+    <!-- custom styleguide js -->
+    <script src="styleguide.js"></script>
+
+    </body>
+</html>

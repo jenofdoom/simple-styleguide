@@ -1,0 +1,106 @@
+/*
+  These styles are scoped to and only apply to the styleguide page itself.
+*/
+
+.styleguide #category-tabs {
+  padding-left: 15px;
+  text-transform: capitalize;
+  list-style-type: none;
+  padding: 0;
+  border-bottom: 1px solid #666666;
+}
+
+.styleguide #category-tabs > li {
+  display: inline-block;
+  font-weight: bold;
+  padding: 7px 10px;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #666666;
+  border-bottom: 0 none;
+  cursor: pointer;
+}
+
+.styleguide #category-tabs > li:hover {
+  background-color: #999999;
+}
+
+.styleguide #category-tabs > li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.styleguide #category-tabs > li.active {
+  background-color: #666666;
+}
+
+.styleguide #category-tabs > li.active a {
+  color: #FFFFFF;
+}
+
+.styleguide section[data-markdown] {
+  border: 1px solid #666666;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.styleguide section[data-markdown] pre {
+  margin-top: 20px;
+  position: relative;
+  border: 1px solid #666666;
+  padding: 10px;
+  font-family: Courier, monospace;
+  background-color: #F5F5F5;
+  overflow-x: auto;
+}
+
+.styleguide section[data-markdown] pre {
+  margin-top: 20px;
+  position: relative;
+  border: 1px solid #666666;
+  padding: 10px;
+  font-family: Courier, monospace;
+  background-color: #F5F5F5;
+  overflow-x: auto;
+}
+
+.styleguide section[data-markdown] h3:first-child {
+  margin-top: 0;
+}
+
+.styleguide section[data-markdown] button.copy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.6rem;
+  border-radius: 2px;
+  border-width: 0px;
+  outline: 1px solid #666666;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  cursor: pointer;
+  min-width: 0;
+  background: transparent;
+  color: #000000;
+}
+
+.styleguide #scroll-to-top {
+  text-align: right;
+}
+
+.styleguide #scroll-to-top a {
+  border: 1px solid #666666;
+  border-radius: 5px;
+  background-color: #666666;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 7px 10px;
+  font-weight: bold;
+}
+
+.styleguide #scroll-to-top.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
